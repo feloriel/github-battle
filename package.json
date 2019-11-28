@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Compare two Github user's profile.",
   "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "SET NODE_ENV='production' && webpack"
+  },
   "keywords": [
     "react",
     "react-router",
@@ -10,5 +14,15 @@
     "webpack"
   ],
   "author": "Irina Lepekhina",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.1",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
 }
